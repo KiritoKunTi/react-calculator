@@ -27,9 +27,8 @@ const App = () => {
     const numClickHandler = (e) => {
         e.preventDefault();
         const value = e.target.innerHTML;
-        console.log("number clicked");
 
-        if ( calc.num.length < 16 ) {
+        if ( String(calc.num).length < 16 ) {
             setCalc({
                 ...calc, 
                 num: 
